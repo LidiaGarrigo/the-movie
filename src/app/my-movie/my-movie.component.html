@@ -1,0 +1,70 @@
+<div class="card">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-subtitle>Reference number: {{movie?.id}} </mat-card-subtitle>
+      <mat-card-title>{{ movie?.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="container">
+
+      <div class="img">
+        <img src='{{movie?.poster}}'>
+      </div>
+
+      <div class="content">
+
+        <div class="description">
+          <p class="description-title">Room:</p>
+          <div class="descriptions">
+            <p>{{ movie?.room }}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Genres:</p>
+          <div class="descriptions">
+            <p *ngFor='let genre of movie?.genres'>{{genre}}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Year:</p>
+          <div class="descriptions">
+            <p>{{movie?.year}}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Director:</p>
+          <div class="descriptions">
+            <p>{{movie?.director}}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Actors:</p>
+          <div class="descriptions">
+            <p *ngFor='let actor of movie?.actors'>{{actor}}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Schedule:</p>
+          <div class="descriptions">
+            <p>{{movie?.hours}}</p>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="description-title">Synopsis:</p>
+          <div class="descriptions">
+            <p>{{movie?.synopsis}}</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <button mat-stroked-button color="primary" [routerLink]="['/home']"> Come back </button>
+    </mat-card-content>
+  </mat-card>
+</div>

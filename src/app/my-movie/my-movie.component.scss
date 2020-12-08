@@ -1,0 +1,66 @@
+:host {
+  display: flex;
+  justify-content: center;
+  height: 750px;
+  background-image: url("../../assets/img.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+.card{
+  background-image: url(../../assets/img.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+
+  mat-card{
+    width: 60%;
+    margin: auto;
+    opacity: 0.9;
+    mat-card-header{
+      margin-left: 3%;
+    }
+.container {
+      display: flex;
+      flex-direction: wrap;
+      justify-content: center;
+      .content {
+        .description{
+          display: flex;
+          .description-title{
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+      .img {
+        width: 90%;
+        img {
+          width: 80%;
+          object-fit: cover;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          box-shadow: 10px 5px 5px rgb(37, 36, 36);
+        }
+
+      }
+
+
+    }
+
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  button:hover{
+    background-color: blueviolet ;
+    color: white;
+  }
+
+}
+}

@@ -1,0 +1,13 @@
+
+<mat-card *ngFor="let movie of movies" class="card" id="movie_{{movie.id}}">
+  <mat-card-header>
+    <mat-card-title>ROOM {{movie.room}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{movie.poster}}" alt="" width="100px" height="300px">
+  <mat-card-content>
+    <h2>{{movie.title}}</h2>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-stroked-button color="primary" [routerLink]="['/movie/', movie.id]">SEE MORE</button>
+  </mat-card-actions>
+</mat-card>
