@@ -9,12 +9,26 @@
   .card:hover{
     opacity: 1;
     transform: scale(1.1);
-    width: 17%;
+  }
+  #movie_2{
+    height: 61%;
+    margin-top: 11%;
+  }
+  #movie_3{
+    height: 61%;
+    margin-top: 3%;
+  }
+  #movie_4{
+    height: 61%;
+    margin-top: 11%;
+  }
+  #movie_5{
+    height: 61%;
   }
   mat-card {
-    width: 12%;
+    width: 15%;
     height: 65%;
-    margin: 2%;
+    margin: 1.5%;
     opacity: 0.6;
     margin-top: 4%;
     transition: all .5s linear;
