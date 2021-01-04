@@ -1,4 +1,4 @@
-export interface MovieInterface {
+interface MovieInterface {
   id: number;
   title: string;
   poster: string;
@@ -11,3 +11,4 @@ export interface MovieInterface {
   room: number;
 }
 
+export default MovieInterface;
