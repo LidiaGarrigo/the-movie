@@ -1,7 +1,35 @@
-:host {
+@media screen and (max-width: 768px) {
+  .fondo{
+    background-image: url("../../assets/img.jpeg");
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 2vh;
+    .card {
+      width: 50%;
+      margin: 2vh 0;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .actions{
+        button:hover{
+          background-color: blueviolet ;
+          color: white;
+        }
+      }
+    }
+
+  }
+}
+@media screen and (min-width: 768px) {
+.fondo {
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  height: 800px;
   background-image: url("../../assets/img.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -10,35 +38,34 @@
     opacity: 1;
     transform: scale(1.1);
   }
+  #movie_1{
+    margin: 0 1.5vh 13% 1.5vh;
+  }
   #movie_2{
-    height: 61%;
-    margin-top: 11%;
+    margin: 11% 1.5vh 5% 1.5vh;
   }
   #movie_3{
-    height: 61%;
-    margin-top: 3%;
+    margin: 3% 1.5vh 13% 1.5vh;
   }
   #movie_4{
-    height: 61%;
-    margin-top: 11%;
+    margin: 11% 1.5vh 7% 1.5vh;
   }
   #movie_5{
-    height: 61%;
+    margin: 0 1.5vh 15% 1.5vh;
   }
-  mat-card {
+  .card {
+    height: auto;
     width: 15%;
-    height: 65%;
-    margin: 1.5%;
+    top: 5%;
+    margin: 0 2vh;
     opacity: 0.6;
-    margin-top: 4%;
     transition: all .5s linear;
-    /* transform: perspective(100px) rotateY(10deg); */
-    mat-card-header {
+    .header {
       display: flex;
       flex-flow: column;
       align-items: center;
     }
-    mat-card-content {
+    .content {
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -48,7 +75,7 @@
           text-align: center;
         }
       }
-      mat-card-actions {
+      .actions {
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -56,7 +83,8 @@
           background-color: blueviolet ;
           color: white;
         }
-    }
+    } 
 
   }
+} 
 }

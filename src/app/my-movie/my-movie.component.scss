@@ -1,7 +1,13 @@
+@media screen and (max-width: 768px) {
+  .img{
+    display: none;
+  }
+  
+}
 :host {
   display: flex;
   justify-content: center;
-  height: 750px;
+  height: 150vh;
   background-image: url("../../assets/img.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
